@@ -2,58 +2,58 @@
 
 _<h5 align="center">Learn how to make a game with the Godot Engine.</h5>_
 
-## Summary
+**<h2 align="center">0 - New Empty Project</h2>**
 
-- ### [0 - Empty Project]()
+### Summary
 
-The course starting project, with empty folders and the project architecture.
+In this part we are going to see :
 
-- ### [1 - Getting Started with Godot]()
+- How to install Godot on your local machine
+- How to create/setup your new project
+- How to use git with you project
 
-Understanding the Godot node system, and getting started with the basics of scenes, and objects.
+### Install Godot
 
-- ### [2 - Player Movements]()
+Godot does not come with an installer but as an executable. To download it, go to the [godot]() download page, and download the `64-bit Standard` version of Godot.
 
-Implementing the basic movements that a player can have in a plateformer, such as moving right or left, and jumping.
+It will download a zip file, in which you will find the executable.
 
-- ### [3 - Level design]()
+> For Linux users, it might be easier to use the `sudo snap install godot --classic` command.
 
-Creating complex levels, with camera movements, and adding a link between each levels.
+Double click on the executable to run Godot.
 
-- ### [4 - Sprites and Animations]()
+### New Project
 
-Making the game more appealing with some sprites and animations.
+You should land on this window.
 
-- ### [5 - Tiles and Parrallax]()
+![Godot Landing Page](assets/course/godot_landing_page.png)
 
-Improving the game aspect by adding tileset for our plateforms, parrallax in the background, lights and more.
+Click on `New Project` and create your new Godot game.
 
-- ### [6 - Ennemies and player life]()
+> Aside from the game name and location, you should leave the remaining parameters with the default value.
 
-Adding ennemies to the game and life to the player, adding collisions between enemies and player.
+![Godot New Project](assets/course/new_game_window.png)
 
-- ### [7 - Screens and menus]()
+If you want to use the same project as this repository, start by cloning it to your working folder.
 
-Adding screens to the game, such as the main menu, a game over screen, and a pause menu.
+```bash
+❯ git clone https://github.com/Anatole-DC/godot_plateformer_tutorial.git
+```
 
-- ### [8 - Sounds and music]()
+Then import the project by clicking the `Import` button, and selecting the `project.godot` file in the project directory.
 
-Adding music and sounds to the game in order to give a player a better experience.
+![Import the project](assets/course/import_existing_project.png)
 
-- ### [9 - Backups and checkpoints]()
+### Git
 
-Adding backups and checkpoints to load previous game, and checkpoints to ease the more complex levels.
+If you want to setup git with you project, you can copy the [.gitignore](.gitignore) file of this repository and paste it in your project root.
 
-- ### [10 - Export the game]()
+You can run the `git init` command at the same location.
 
-Exporting the game to different plateforms.
+> Warning ! Do not forget to add the .gitignore, otherwise, it might break your repository !
 
-## About this repository
+### Conclusion
 
-In order to follow this course, you can use a `git checkout <part>` with the branch name, if you didn't succeed to implement all the elements of the Mooc.
+**Congratulation, you are now able to create/import and setup a Godot project !**
 
-Each branch contains the assets needed for the part of the tutorial.
-
-## Contact
-
-_For further questions about this repository, please contact me at **adechauveron@gmail.com**._
+**In the [next part](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/1-Getting-started-with-godot), we are going to learn the different usage of the Godot's pannel, and how to create our firts scene.**
