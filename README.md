@@ -2,68 +2,28 @@
 
 _<h5 align="center">Learn how to make a game with the Godot Engine.</h5>_
 
-**<h2 align="center">0 - New Empty Project</h2>**
+**<h2 align="center">1 - Getting Started with Godot</h2>**
 
 ### Requirements
 
 Before following this course, if you are using this project as source code, run the following command :
 
 ```bash
-❯ git checkout 0-Empty-Project
+❯ git checkout 1-Getting-started-with-godot
 ```
 
 ### Summary
 
 In this part we are going to see :
 
-- How to install Godot on your local machine
-- How to create/import your new project
-- How to setup git with you project
+- What are the purposes of each pannels in the Godot Game Engine
+- How to nodes work in Godot
+- How create our first scene and objects
 
-### Install Godot
+### Quick tour of Godot
 
-Godot does not come with an installer but as an executable. To download it, go to the [godot](https://godotengine.org/download) download page, and download the `64-bit Standard` version of Godot.
+### Create a first scene
 
-![Godot download page](assets/course/godot_download_page.png)
-
-It will download a zip file, in which you will find the executable.
-
-> For Linux users, it might be easier to use the `sudo snap install godot --classic` command.
-
-Double click on the executable to run Godot.
-
-### New Project
-
-You should land on this window.
-
-![Godot Landing Page](assets/course/godot_landing_page.png)
-
-Click on `New Project` and create your new Godot game.
-
-> Aside from the game name and location, you should leave the remaining parameters with the default value.
-
-![Godot New Project](assets/course/new_game_window.png)
-
-If you want to use the same project as this repository, start by cloning it to your working folder.
-
-```bash
-❯ git clone https://github.com/Anatole-DC/godot_plateformer_tutorial.git
-```
-
-Then import the project by clicking the `Import` button, and selecting the `project.godot` file in the project directory.
-
-![Import the project](assets/course/import_existing_project.png)
-
-### Git
-
-If you want to setup git with you project, you can copy the [.gitignore](.gitignore) file of this repository and paste it in your project root.
-
-You can run the `git init` command at the same location.
-
-> Warning ! Do not forget to add the .gitignore, otherwise, it might break your repository !
+### Create our first objects
 
 ### Conclusion
-
-**Congratulation, you are now able to create/import and setup a Godot project !**
-
-**In the [next part](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/1-Getting-started-with-godot), we are going to learn the different usage of the Godot's pannel, and how to create our firts scene.**
