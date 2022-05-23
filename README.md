@@ -59,7 +59,23 @@ func _physics_process(delta):
 	iteration += 1
 ```
 
+> For the print, the {iteration} is then replaced by the value passed in the format following the string.
+
+If you run the game, you can see the message printed in your console, with the increment. This means that your script is working.
+
+```bash
+...
+Hello World 185
+Hello World 186
+Hello World 187
+Hello World 188
+Hello World 189
+Hello World 190
+Hello World 191
+...
+```
 ### Left and right movements
+
 
 ### Gravity and jumps
 
