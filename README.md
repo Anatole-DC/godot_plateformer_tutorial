@@ -4,17 +4,27 @@ _<h5 align="center">Learn how to make a game with the Godot Engine.</h5>_
 
 **<h2 align="center">0 - New Empty Project</h2>**
 
+### Requirements
+
+Before following this course, if you are using this project as source code, run the following command :
+
+```bash
+❯ git checkout 0-Empty-Project
+```
+
 ### Summary
 
 In this part we are going to see :
 
 - How to install Godot on your local machine
-- How to create/setup your new project
-- How to use git with you project
+- How to create/import your new project
+- How to setup git with you project
 
 ### Install Godot
 
-Godot does not come with an installer but as an executable. To download it, go to the [godot]() download page, and download the `64-bit Standard` version of Godot.
+Godot does not come with an installer but as an executable. To download it, go to the [godot](https://godotengine.org/download) download page, and download the `64-bit Standard` version of Godot.
+
+![Godot download page](assets/course/godot_download_page.png)
 
 It will download a zip file, in which you will find the executable.
 
