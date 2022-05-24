@@ -16,11 +16,11 @@ Understanding the Godot node system, and getting started with the basics of scen
 
 Implementing the basic movements that a player can have in a plateformer, such as moving right or left, and jumping.
 
-- ### [3 - Sprites and Animations](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/4-Sprites-and-animations)
+- ### [3 - Sprites and Animations](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/3-Sprites-and-animations)
 
 Making the game more appealing with some sprites and animations.
 
-- ### [4 - Level design](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/3-Level-design)
+- ### [4 - Level design](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/4-Level-design)
 
 Creating complex levels, with camera movements, and adding a link between each levels.
 
