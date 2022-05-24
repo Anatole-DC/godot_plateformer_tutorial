@@ -186,4 +186,4 @@ Finally, we add a negative value to the `velocity.y` because in Godot, the y axi
 - **To create a variable, use the `var` keyword, and to make it an inspector editable property, use the `export` keyword in front of the variable**
 - **Use the `move_and_slide` function to make your player move. It takes a `Vector2` that you can add to the character as a variable, to then edit and increase the value, to make the player move**
 
-**In the [next chapter](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/3-Level-design) we are going to improve the level design of our game.**
+**In the [next chapter](https://github.com/Anatole-DC/godot_plateformer_tutorial/tree/3-Sprites-and-animations) we are going to improve the overall look of our game.**
