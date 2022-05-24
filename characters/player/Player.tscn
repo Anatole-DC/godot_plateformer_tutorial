@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://characters/player/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/animations/player/Idle (1).png" type="Texture" id=2]
@@ -16,6 +16,36 @@
 [ext_resource path="res://assets/animations/player/Idle (13).png" type="Texture" id=14]
 [ext_resource path="res://assets/animations/player/Idle (14).png" type="Texture" id=15]
 [ext_resource path="res://assets/animations/player/Idle (15).png" type="Texture" id=16]
+[ext_resource path="res://assets/animations/player/Walk (1).png" type="Texture" id=17]
+[ext_resource path="res://assets/animations/player/Walk (2).png" type="Texture" id=18]
+[ext_resource path="res://assets/animations/player/Walk (3).png" type="Texture" id=19]
+[ext_resource path="res://assets/animations/player/Walk (4).png" type="Texture" id=20]
+[ext_resource path="res://assets/animations/player/Walk (5).png" type="Texture" id=21]
+[ext_resource path="res://assets/animations/player/Walk (6).png" type="Texture" id=22]
+[ext_resource path="res://assets/animations/player/Walk (7).png" type="Texture" id=23]
+[ext_resource path="res://assets/animations/player/Walk (8).png" type="Texture" id=24]
+[ext_resource path="res://assets/animations/player/Walk (9).png" type="Texture" id=25]
+[ext_resource path="res://assets/animations/player/Walk (10).png" type="Texture" id=26]
+[ext_resource path="res://assets/animations/player/Walk (11).png" type="Texture" id=27]
+[ext_resource path="res://assets/animations/player/Walk (12).png" type="Texture" id=28]
+[ext_resource path="res://assets/animations/player/Walk (13).png" type="Texture" id=29]
+[ext_resource path="res://assets/animations/player/Walk (14).png" type="Texture" id=30]
+[ext_resource path="res://assets/animations/player/Walk (15).png" type="Texture" id=31]
+[ext_resource path="res://assets/animations/player/Jump (1).png" type="Texture" id=32]
+[ext_resource path="res://assets/animations/player/Jump (2).png" type="Texture" id=33]
+[ext_resource path="res://assets/animations/player/Jump (3).png" type="Texture" id=34]
+[ext_resource path="res://assets/animations/player/Jump (4).png" type="Texture" id=35]
+[ext_resource path="res://assets/animations/player/Jump (5).png" type="Texture" id=36]
+[ext_resource path="res://assets/animations/player/Jump (6).png" type="Texture" id=37]
+[ext_resource path="res://assets/animations/player/Jump (7).png" type="Texture" id=38]
+[ext_resource path="res://assets/animations/player/Jump (8).png" type="Texture" id=39]
+[ext_resource path="res://assets/animations/player/Jump (9).png" type="Texture" id=40]
+[ext_resource path="res://assets/animations/player/Jump (10).png" type="Texture" id=41]
+[ext_resource path="res://assets/animations/player/Jump (11).png" type="Texture" id=42]
+[ext_resource path="res://assets/animations/player/Jump (12).png" type="Texture" id=43]
+[ext_resource path="res://assets/animations/player/Jump (13).png" type="Texture" id=44]
+[ext_resource path="res://assets/animations/player/Jump (14).png" type="Texture" id=45]
+[ext_resource path="res://assets/animations/player/Jump (15).png" type="Texture" id=46]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -23,6 +53,16 @@ animations = [ {
 "loop": true,
 "name": "idle",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "walk",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "jump",
+"speed": 25.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=3]
@@ -35,14 +75,18 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="AnimatedSprite" parent="."]
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -3.8147e-06, 0 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Position2D"]
+position = Vector2( 0.100831, 0.245918 )
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 2 )
 animation = "idle"
-offset = Vector2( 150, 0 )
+offset = Vector2( 176.341, -22.6766 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3.98708, 3.41749 )
+position = Vector2( 0.165009, 0.427996 )
 scale = Vector2( 1.12, 1 )
 shape = SubResource( 3 )
 

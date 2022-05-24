@@ -44,7 +44,57 @@ You can check if the animation is loaded by checking the `Playing` option in the
 
 **Add the animations in the script**
 
-To add the animation, we are going to edit the player script.
+To add the animation, we are going to edit the player script. In order to access a node in the object node tree, we use the '`$`' sign to access the node, and if you want to access subnodes, you can separate your node path with a '`/`'.
+
+> In my node tree, I interpolated a `Position2D` because my sprites where to large, so the flip position was behaving weirdly, but I placed the line you can use, if you only have an animated sprite.
+
+We use the `play` method of the Sprite node, to run the animation we want, and according to the direction, we flip the sprite on the horizontal axis.
+
+```gdscript
+func _physics_process(delta):
+
+	# Right movement
+	if Input.is_action_pressed("right"):
+		velocity.x = WALK_SPEED
+		$Position2D.scale.x = 1
+		# $Sprite.flip_h = false
+		$Position2D/Sprite.play("walk")
+
+	# Left movement
+	elif Input.is_action_pressed("left"):
+		velocity.x = -WALK_SPEED
+		$Position2D.scale.x = -1
+		# $Sprite.flip_h = true
+		$Position2D/Sprite.play("walk")
+
+	else:
+		if is_on_floor():
+			$Position2D/Sprite.play("idle")
+
+	if not is_on_floor():
+		$Position2D/Sprite.play("jump")
+
+	# Jump movement
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = JUMP_FORCE
+
+	# Player fall
+	velocity.y += GRAVITY
+
+	# Update the player position
+	velocity = move_and_slide(velocity, Vector2.UP)
+	velocity.x = lerp(velocity.x, 0, 0.3)		# Stops the object with a smooth movement
+```
+
+If you followed every steps, you should have a player that is animated on the screen.
+
+### Tiles
+
+Most of the game engines today include a tileset feature. `Tiles` are a set of sprites, attach to one object. We can then select tiles to "paint" our level, with visual elements, that will all have the same property.
+
+**New Tileset**
+
+Let's create a new scene, with a `TileMap` as a root node. Click on the `New TileSet` in the `tileset` property in the inspector, and click on it again to open the tileset dock at the bottom of the viewport.
 
 ### Conclusion
 
